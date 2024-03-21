@@ -1,0 +1,6 @@
+ {
+    "dropdownOne": "#demo_groups-dropdown-selected",
+    "dropdownTwo": "#dropdowm-menu-2",
+    "dropdownThree": "#dropdowm-menu-3",
+    "checkboxOne": "label:nth-child(1) > input[type=checkbox]"
+  }
