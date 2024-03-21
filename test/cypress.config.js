@@ -4,9 +4,10 @@ module.exports = defineConfig({
   e2e: {
     testIsolation: false,
     chromeWebSecurity: false,
-    //reporter: 'mochawesome',
+    reporter: 'mochawesome',
     setupNodeEvents(on, config) {
       // implement node event listeners here
+      require('cypress-mochawesome-reporter/plugin')(on);
       on('task', {
         log(message) {
           // Then to see the log messages in the terminal
