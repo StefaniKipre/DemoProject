@@ -2,7 +2,7 @@ export class shadowElements {
     elements = {
         LadiesOuterwearMenu: () => cy.get('body > shop-app').shadow().contains('Ladies Outerwear'),
         LadiesSonomaJacket: () => cy.get('body > shop-app').shadow().find('iron-pages > shop-list')
-        .shadow().contains('ul', 'Ladies Sonoma Hybrid Knit Jacket')
+        .shadow().find('ul > li:nth-child(5) > a > shop-list-item')
         .shadow().find('shop-image').shadow().find('#img'),
         LadiesColoblockJacket: () => cy.get('body > shop-app').shadow().find('iron-pages > shop-list')
         .shadow().find('ul > li:nth-child(2) > a > shop-list-item')
