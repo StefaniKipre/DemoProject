@@ -7,7 +7,7 @@ describe('Test the core functionalities of the website including interactions wi
       navigate()
    })
 
-   it.only('Verify images on Product Pages and Listings', () => {
+   it('Verify images on Product Pages and Listings', () => {
       GetShadow.LadiesMenu()
       longWait().then(()=> {
          GetShadow.ColorblockJacket()
@@ -92,7 +92,7 @@ describe('Test the core functionalities of the website including interactions wi
       longWait()
       })
       
-      it('Verify checkout flow and functionalities (Shadow DOM)', () => {
+      it.only('Verify checkout flow and functionalities (Shadow DOM)', () => {
          GetShadow.LadiesMenu()
          mediumWait().then(()=>{
             GetShadow.ColorblockJacket()
@@ -118,8 +118,10 @@ describe('Test the core functionalities of the website including interactions wi
          shortWait().then(()=>{
             GetShadow.ViewCart()
          })
-         GetShadow.elements.EmptyCart()
-         .should('have.text', '(2 items)')
+         shortWait().then(()=> {
+            GetShadow.elements.EmptyCart()
+            .should('have.text', '(2 items)')
+         })
          GetShadow.Checkout()
          mediumWait().then(()=>{
             GetShadow.fillBillingForm('CheckoutData')
