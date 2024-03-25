@@ -3,7 +3,7 @@
     "cypress": "^13.6.6",
     "cypress-mochawesome-reporter": "^3.8.2",
     "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
-    "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports --inline",
+    "generate-report": "merge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports --inline",
     "posttest": "yarn run combine-reports && yarn run generate-report"
   }
 }

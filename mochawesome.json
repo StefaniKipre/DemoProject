@@ -1,0 +1,509 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 12,
+    "passes": 12,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 12,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2024-03-22T10:09:06.126Z",
+    "end": "2024-03-25T09:33:55.382Z",
+    "duration": 257089256
+  },
+  "results": [
+    {
+      "uuid": "d66b7d89-6ac2-4b9b-862f-a75d02750346",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ebc50085-0739-42dc-a467-026feaa250b1",
+          "title": "Test the core functionalities of the website including interactions with shadow DOM elements",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify checkout flow and functionalities (Shadow DOM)",
+              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements Verify checkout flow and functionalities (Shadow DOM)",
+              "timedOut": null,
+              "duration": 30598,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.Quantity('5');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '5');\n_shadowElements.GetShadow.AddtoCart();\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ViewCart();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(2 items)');\n});\n_shadowElements.GetShadow.Checkout();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.fillBillingForm('CheckoutData');\n});\n_shadowElements.GetShadow.PlaceOrder();\n_shadowElements.GetShadow.elements.SuccessfulPurchase().should('have.text', 'Thank you');\n(0, _Helpers.mediumWait)();\n_shadowElements.GetShadow.Finish();\n(0, _Helpers.mediumWait)();",
+              "err": {},
+              "uuid": "387b3736-864e-45cb-b3a2-3a317c577385",
+              "parentUUID": "ebc50085-0739-42dc-a467-026feaa250b1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "387b3736-864e-45cb-b3a2-3a317c577385"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 30598,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8752406d-0da9-4beb-ba3b-a1f448614ea4",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "55c496d0-8972-40b8-9e86-5c026e600d69",
+          "title": "Test the core functionalities of the website including interactions with shadow DOM elements",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify checkout flow and functionalities (Shadow DOM)",
+              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements Verify checkout flow and functionalities (Shadow DOM)",
+              "timedOut": null,
+              "duration": 25943,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.Quantity('5');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '5');\n_shadowElements.GetShadow.AddtoCart();\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ViewCart();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(2 items)');\n});\n_shadowElements.GetShadow.Checkout();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.fillBillingForm('CheckoutData');\n});\n_shadowElements.GetShadow.PlaceOrder();\n_shadowElements.GetShadow.elements.SuccessfulPurchase().should('have.text', 'Thank you');\n(0, _Helpers.mediumWait)();\n_shadowElements.GetShadow.Finish();\n(0, _Helpers.mediumWait)();",
+              "err": {},
+              "uuid": "ec78b76a-a46b-40f9-b167-5560356be522",
+              "parentUUID": "55c496d0-8972-40b8-9e86-5c026e600d69",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ec78b76a-a46b-40f9-b167-5560356be522"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25943,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ee181c3e-c460-42c8-8694-0050d9ce9e96",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
+      "file": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f8965778-1c61-4672-b715-d0c39d535575",
+          "title": "Testing Sizes, Items and Shopping Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Size buttons",
+              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Size buttons",
+              "timedOut": null,
+              "duration": 1852,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Stefi.Sizes([\"M\", \"L\", \"S\", \"XXL\"]);",
+              "err": {},
+              "uuid": "f2f30fd8-88bf-442c-850f-0fb9ea05b60e",
+              "parentUUID": "f8965778-1c61-4672-b715-d0c39d535575",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Add To Cart buttons",
+              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Add To Cart buttons",
+              "timedOut": null,
+              "duration": 1273,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Marine Blue T-shirt\"]);\n//cy.wait(2000)",
+              "err": {},
+              "uuid": "06f8e116-202d-4446-b436-1c088e7da4f9",
+              "parentUUID": "f8965778-1c61-4672-b715-d0c39d535575",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Quantity buttons",
+              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Quantity buttons",
+              "timedOut": null,
+              "duration": 1675,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.Cart();",
+              "err": {},
+              "uuid": "a25a03d5-bbdc-4032-80ca-a277a7bc1cb7",
+              "parentUUID": "f8965778-1c61-4672-b715-d0c39d535575",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f2f30fd8-88bf-442c-850f-0fb9ea05b60e",
+            "06f8e116-202d-4446-b436-1c088e7da4f9",
+            "a25a03d5-bbdc-4032-80ca-a277a7bc1cb7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4800,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0c1281bf-9313-419e-bcf8-92a44887cb27",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
+      "file": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "13af9a1b-5bb5-472d-8886-04497a28b728",
+          "title": "Testing Sizes, Items and Shopping Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Size buttons",
+              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Size buttons",
+              "timedOut": null,
+              "duration": 1816,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Stefi.Sizes([\"M\", \"L\", \"S\", \"XXL\"]);",
+              "err": {},
+              "uuid": "5c3a0d43-8e8d-4085-8b96-2b337f13cdec",
+              "parentUUID": "13af9a1b-5bb5-472d-8886-04497a28b728",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Add To Cart buttons",
+              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Add To Cart buttons",
+              "timedOut": null,
+              "duration": 1321,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Marine Blue T-shirt\"]);\n//cy.wait(2000)",
+              "err": {},
+              "uuid": "0622d13a-42ca-4555-930c-747056bd5509",
+              "parentUUID": "13af9a1b-5bb5-472d-8886-04497a28b728",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Quantity buttons",
+              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Quantity buttons",
+              "timedOut": null,
+              "duration": 1628,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.Cart();",
+              "err": {},
+              "uuid": "491c2dc3-adbe-4a22-a1c4-21a9a8dd3a35",
+              "parentUUID": "13af9a1b-5bb5-472d-8886-04497a28b728",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5c3a0d43-8e8d-4085-8b96-2b337f13cdec",
+            "0622d13a-42ca-4555-930c-747056bd5509",
+            "491c2dc3-adbe-4a22-a1c4-21a9a8dd3a35"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4765,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "9204a6a6-f0d7-431c-b520-df86d17b1706",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "90ad9853-198e-4023-9016-e8b80d746dc3",
+          "title": "Test the core functionalities of the website including interactions with shadow DOM elements",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify checkout flow and functionalities (Shadow DOM)",
+              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements Verify checkout flow and functionalities (Shadow DOM)",
+              "timedOut": null,
+              "duration": 25649,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.Quantity('5');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '5');\n_shadowElements.GetShadow.AddtoCart();\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ViewCart();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(2 items)');\n});\n_shadowElements.GetShadow.Checkout();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.fillBillingForm('CheckoutData');\n});\n_shadowElements.GetShadow.PlaceOrder();\n_shadowElements.GetShadow.elements.SuccessfulPurchase().should('have.text', 'Thank you');\n(0, _Helpers.mediumWait)();\n_shadowElements.GetShadow.Finish();\n(0, _Helpers.mediumWait)();",
+              "err": {},
+              "uuid": "1d905abb-f634-42f7-bc90-a666f77d8f3b",
+              "parentUUID": "90ad9853-198e-4023-9016-e8b80d746dc3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1d905abb-f634-42f7-bc90-a666f77d8f3b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25649,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d8beace6-01d2-488d-8c2d-6a14f3188233",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
+      "file": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e415b4e7-bee2-4b2a-a858-7d4ce36ed610",
+          "title": "Testing Sizes, Items and Shopping Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Size buttons",
+              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Size buttons",
+              "timedOut": null,
+              "duration": 2741,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Stefi.Sizes([\"M\", \"L\", \"S\", \"XXL\"]);",
+              "err": {},
+              "uuid": "cd032a06-b33a-419a-9f1e-695a05393e13",
+              "parentUUID": "e415b4e7-bee2-4b2a-a858-7d4ce36ed610",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Add To Cart buttons",
+              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Add To Cart buttons",
+              "timedOut": null,
+              "duration": 1906,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Marine Blue T-shirt\"]);\n//cy.wait(2000)",
+              "err": {},
+              "uuid": "207b738e-4438-42f4-81f9-e44fa7061719",
+              "parentUUID": "e415b4e7-bee2-4b2a-a858-7d4ce36ed610",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Quantity buttons",
+              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Quantity buttons",
+              "timedOut": null,
+              "duration": 1949,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.Cart();",
+              "err": {},
+              "uuid": "97ee3934-8a0d-4208-a022-d4461717b9a3",
+              "parentUUID": "e415b4e7-bee2-4b2a-a858-7d4ce36ed610",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cd032a06-b33a-419a-9f1e-695a05393e13",
+            "207b738e-4438-42f4-81f9-e44fa7061719",
+            "97ee3934-8a0d-4208-a022-d4461717b9a3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6596,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/mocha"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
