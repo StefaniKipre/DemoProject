@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-22T10:09:06.126Z",
+    "end": "2024-03-22T10:09:16.786Z",
+    "duration": 10660,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d8beace6-01d2-488d-8c2d-6a14f3188233",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
+      "file": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e415b4e7-bee2-4b2a-a858-7d4ce36ed610",
+          "title": "Testing Sizes, Items and Shopping Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Size buttons",
+              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Size buttons",
+              "timedOut": null,
+              "duration": 2741,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Stefi.Sizes([\"M\", \"L\", \"S\", \"XXL\"]);",
+              "err": {},
+              "uuid": "cd032a06-b33a-419a-9f1e-695a05393e13",
+              "parentUUID": "e415b4e7-bee2-4b2a-a858-7d4ce36ed610",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Add To Cart buttons",
+              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Add To Cart buttons",
+              "timedOut": null,
+              "duration": 1906,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Marine Blue T-shirt\"]);\n//cy.wait(2000)",
+              "err": {},
+              "uuid": "207b738e-4438-42f4-81f9-e44fa7061719",
+              "parentUUID": "e415b4e7-bee2-4b2a-a858-7d4ce36ed610",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Quantity buttons",
+              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Quantity buttons",
+              "timedOut": null,
+              "duration": 1949,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.Cart();",
+              "err": {},
+              "uuid": "97ee3934-8a0d-4208-a022-d4461717b9a3",
+              "parentUUID": "e415b4e7-bee2-4b2a-a858-7d4ce36ed610",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cd032a06-b33a-419a-9f1e-695a05393e13",
+            "207b738e-4438-42f4-81f9-e44fa7061719",
+            "97ee3934-8a0d-4208-a022-d4461717b9a3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6596,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/mocha"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

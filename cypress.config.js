@@ -6,6 +6,12 @@ module.exports = defineConfig({
     testIsolation: false,
     chromeWebSecurity: false,
     reporter: 'mochawesome',
+    reporterOptions:{
+      overwrite: false,
+      html: false,
+      json: true,
+      reportDir: 'cypress/reports/mocha',
+    },
     setupNodeEvents(on, config) {
       // implement node event listeners here
       require('cypress-mochawesome-reporter/plugin')(on);
