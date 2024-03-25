@@ -1,20 +1,20 @@
 {
   "stats": {
-    "suites": 13,
-    "tests": 20,
-    "passes": 19,
+    "suites": 10,
+    "tests": 17,
+    "passes": 16,
     "pending": 0,
     "failures": 1,
-    "testsRegistered": 20,
-    "passPercent": 95,
+    "testsRegistered": 17,
+    "passPercent": 94.11764705882354,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
     "start": "2024-03-22T10:09:06.126Z",
-    "end": "2024-03-25T10:38:35.904Z",
-    "duration": 260969778
+    "end": "2024-03-25T10:31:19.492Z",
+    "duration": 260533366
   },
   "results": [
     {
@@ -625,180 +625,6 @@
           "pending": [],
           "skipped": [],
           "duration": 17469,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "05d9fb11-d548-4bd8-af2c-5ba15ab7fb6f",
-      "title": "",
-      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "f347bd04-18c5-4e61-9ab0-3c44201edb82",
-          "title": "Test the core functionalities of the website including interactions with shadow DOM elements",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Verify images on Product Pages and Listings",
-              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements Verify images on Product Pages and Listings",
-              "timedOut": null,
-              "duration": 15471,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.longWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.elements.LadiesColoblockJacket().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.elements.LadiesSonomaJacket().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.MensMenu();\n});\n_shadowElements.GetShadow.GoogleTShirt();\n_shadowElements.GetShadow.elements.BasicGoogleTshirt().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.MensMenu();\n});\n_shadowElements.GetShadow.MapsTshirt();\n_shadowElements.GetShadow.elements.GoogleMapsTshirt().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.shortWait)();",
-              "err": {},
-              "uuid": "5ecd0a48-025e-4e56-a8a7-b9dc69a2ea4a",
-              "parentUUID": "f347bd04-18c5-4e61-9ab0-3c44201edb82",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "5ecd0a48-025e-4e56-a8a7-b9dc69a2ea4a"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 15471,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "7b199d27-00d5-4165-beb1-7249870fb121",
-      "title": "",
-      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "a5e098c3-e1df-40c4-91ed-ff1c857499e3",
-          "title": "Test the core functionalities of the website including interactions with shadow DOM elements",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Verify size and quantity selection in product and cart",
-              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements Verify size and quantity selection in product and cart",
-              "timedOut": null,
-              "duration": 19135,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.SonomaJacket();\n});\n_shadowElements.GetShadow.Quantity('2');\n_shadowElements.GetShadow.Size('XL');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '2');\n_shadowElements.GetShadow.elements.SizeSelect().should('have.value', 'XL');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.MensMenu();\n});\n_shadowElements.GetShadow.GoogleTShirt();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.Size('S');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n_shadowElements.GetShadow.elements.SizeSelect().should('have.value', 'S');\n_shadowElements.GetShadow.ViewCart();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.QuantityCart('5');\n});\n_shadowElements.GetShadow.elements.QuantitySelectinCart().should('have.value', '5');\n(0, _Helpers.longWait)();",
-              "err": {},
-              "uuid": "0864a284-e2d7-4a6a-a440-182208d62f23",
-              "parentUUID": "a5e098c3-e1df-40c4-91ed-ff1c857499e3",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "0864a284-e2d7-4a6a-a440-182208d62f23"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 19135,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "a6c7a0a6-1560-4619-96de-640e060652b8",
-      "title": "",
-      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "f3b6d526-04b3-4a21-bff4-91c02d87d426",
-          "title": "Test the core functionalities of the website including interactions with shadow DOM elements",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Verify adding and removing multiple items to cart",
-              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements Verify adding and removing multiple items to cart",
-              "timedOut": null,
-              "duration": 10042,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n_shadowElements.GetShadow.ViewCart();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.Remove();\n});\n_shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(0 items)');\n(0, _Helpers.longWait)();",
-              "err": {},
-              "uuid": "391fd67c-b042-40cc-93c7-7783e933d17a",
-              "parentUUID": "f3b6d526-04b3-4a21-bff4-91c02d87d426",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "391fd67c-b042-40cc-93c7-7783e933d17a"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 10042,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -73,7 +73,7 @@ describe('Test the core functionalities of the website including interactions wi
     longWait()
    })
    
-   it('Verify adding and removing multiple items to cart', () => {
+   it.only('Verify adding and removing multiple items to cart', () => {
       GetShadow.LadiesMenu()
       shortWait().then(() => {
          GetShadow.ColorblockJacket()
@@ -92,7 +92,7 @@ describe('Test the core functionalities of the website including interactions wi
       longWait()
       })
       
-      it.only('Verify checkout flow and functionalities (Shadow DOM)', () => {
+      it('Verify checkout flow and functionalities (Shadow DOM)', () => {
          GetShadow.LadiesMenu()
          mediumWait().then(()=>{
             GetShadow.ColorblockJacket()

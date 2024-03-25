@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-25T10:30:58.703Z",
+    "end": "2024-03-25T10:31:19.492Z",
+    "duration": 20789,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "875b56d4-c601-402e-9ca2-1b2b80ffecef",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\SubmitForm\\SubmitTest.cy.js",
+      "file": "test\\cypress\\e2e\\SubmitForm\\SubmitTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d6dde68a-efe5-4266-8a3b-2bca49b18b52",
+          "title": "Test Form submit with math problem",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test submit form",
+              "fullTitle": "Test Form submit with math problem Test submit form",
+              "timedOut": null,
+              "duration": 17469,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Form.FirstInput('Stefani');\ncy.wait(2000);\nForm.MessageOne('This is the first message <3');\ncy.wait(2000);\nForm.SubmitOne();\ncy.wait(2000);\ncy.get('#et_pb_contact_form_0').should('have.text', 'Thanks for contacting us');\nForm.SecondInput('Kiprevska');\ncy.wait(2000);\nForm.MessageTwo('This is the second message </3');\ncy.wait(2000);\nForm.Math('15');\ncy.wait(2000);\nForm.SubmitTwo();\ncy.wait(2000);\ncy.get('#et_pb_contact_form_1').should('have.text', 'Thanks for contacting us');",
+              "err": {},
+              "uuid": "f3ccef29-2cfd-4e34-a889-5f8eeadb5065",
+              "parentUUID": "d6dde68a-efe5-4266-8a3b-2bca49b18b52",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f3ccef29-2cfd-4e34-a889-5f8eeadb5065"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17469,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true,
+        "embeddedScreenshots": true,
+        "saveAllAttempts": false,
+        "reportDir": "cypress/reports/mocha"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

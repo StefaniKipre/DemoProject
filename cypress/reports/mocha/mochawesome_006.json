@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-03-25T10:25:40.871Z",
+    "end": "2024-03-25T10:26:01.307Z",
+    "duration": 20436,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cbb9fdc5-4656-49ea-8c23-08e5c3303be4",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\iFrame\\iFrameTest.cy.js",
+      "file": "test\\cypress\\e2e\\iFrame\\iFrameTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e0b0e88f-d1f7-4c07-9151-672070d7428b",
+          "title": "Test Iframe input results and click on element in iframe",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Input results and click on a search result",
+              "fullTitle": "Test Iframe input results and click on element in iframe Input results and click on a search result",
+              "timedOut": null,
+              "duration": 8246,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Choose.ChooseSearchEngine('info.com');\nChoose.Type('Stefi');\nChoose.ClickSearchBtn();\ncy.wait(3000);\ncy.log('Stefi');\ngetIframeBody().find('[data-extra*=\"position=2\"]').should('have.text', 'Stefi – Wikipédia');\ncy.wait(3000);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<a.web-yahoo__title>' to have text 'Stefi – Wikipédia', but the text was 'STEFI - YouTube'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<a.web-yahoo__title>' to have text 'Stefi – Wikipédia', but the text was 'STEFI - YouTube'\n    at Context.eval (webpack:///./test/cypress/e2e/iFrame/iFrameTest.cy.js:25:55)",
+                "diff": "- 'STEFI - YouTube'\n+ 'Stefi – Wikipédia'\n"
+              },
+              "uuid": "71927071-7b29-4217-80e5-10926a35525c",
+              "parentUUID": "e0b0e88f-d1f7-4c07-9151-672070d7428b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clear search input and try with another search engine",
+              "fullTitle": "Test Iframe input results and click on element in iframe Clear search input and try with another search engine",
+              "timedOut": null,
+              "duration": 8984,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Choose.ChooseSearchEngine('bing.com');\nChoose.Type('Cypress');\nChoose.ClickSearchBtn();\ncy.wait(5000);\ngetIframeBody().find('h2 [href=\"https://github.com/cypress-io/cypress\"]').should('have.text', 'GitHub - cypress-io/cypress: Fast, easy and reliable …');\ncy.wait(3000);",
+              "err": {},
+              "uuid": "bcf06d21-539f-4a7f-a4c0-295a97c98bcc",
+              "parentUUID": "e0b0e88f-d1f7-4c07-9151-672070d7428b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bcf06d21-539f-4a7f-a4c0-295a97c98bcc"
+          ],
+          "failures": [
+            "71927071-7b29-4217-80e5-10926a35525c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 17230,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true,
+        "embeddedScreenshots": true,
+        "saveAllAttempts": false,
+        "reportDir": "cypress/reports/mocha"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
