@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-26T14:16:59.891Z",
+    "end": "2024-03-26T14:17:05.191Z",
+    "duration": 5300,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5d69148c-b168-4592-8b54-0a34e76b3754",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\Input\\InputTest.cy.js",
+      "file": "test\\cypress\\e2e\\Input\\InputTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3f967580-b1f2-4c02-9d4c-7584eb82f497",
+          "title": "Test Input value validation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test all input fields",
+              "fullTitle": "Test Input value validation Test all input fields",
+              "timedOut": null,
+              "duration": 2460,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Input.Firstname('Stefani');\nInput.Lastname('Mnogudolgoprezime');\nInput.Age('26');\nInput.Country('North Macedonia');\nInput.Notes('TEST');\nInput.Submit();\nInput.elements.FirstnameInput().find('#firstname-value').should('have.text', 'Stefani');\nInput.elements.LastnameInput().find('#surname-value').should('have.text', 'Mnogudolgoprezime');\nInput.elements.AgeInput().find('#age-value').should('have.text', '26');\nInput.elements.CountrySelect().find('#country-value').should('have.text', 'North Macedonia');\nInput.elements.NotesInput().find('#notes-value').should('have.text', 'TEST');",
+              "err": {},
+              "uuid": "f1106517-9661-4300-a7c1-079fc2a9aa0e",
+              "parentUUID": "3f967580-b1f2-4c02-9d4c-7584eb82f497",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f1106517-9661-4300-a7c1-079fc2a9aa0e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2460,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "reportPageTitle": "Stefi",
+        "html": false,
+        "json": true,
+        "charts": true,
+        "embeddedScreenshots": true,
+        "saveAllAttempts": false,
+        "screenshotOnRunFailure": true,
+        "inlineAssets": true,
+        "reportDir": "cypress/reports/mocha"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

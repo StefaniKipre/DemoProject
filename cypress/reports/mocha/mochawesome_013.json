@@ -1,0 +1,177 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2024-03-26T14:17:26.892Z",
+    "end": "2024-03-26T14:18:26.559Z",
+    "duration": 59667,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6737db02-1dae-4d93-982c-74dd432b068a",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b07a1f06-df5b-43d7-98e6-299896e6bb15",
+          "title": "Test the core functionalities of the website including interactions with shadow DOM elements STEFI1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify images on Product Pages and Listings",
+              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 Verify images on Product Pages and Listings",
+              "timedOut": null,
+              "duration": 15204,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.longWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.elements.LadiesColoblockJacket().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.elements.LadiesSonomaJacket().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.MensMenu();\n});\n_shadowElements.GetShadow.GoogleTShirt();\n_shadowElements.GetShadow.elements.BasicGoogleTshirt().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.MensMenu();\n});\n_shadowElements.GetShadow.MapsTshirt();\n_shadowElements.GetShadow.elements.GoogleMapsTshirt().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.shortWait)();",
+              "err": {},
+              "uuid": "a6621d9f-73cd-4bf7-95fa-a9ab192e38df",
+              "parentUUID": "b07a1f06-df5b-43d7-98e6-299896e6bb15",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify size and quantity selection in product and cart",
+              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 Verify size and quantity selection in product and cart",
+              "timedOut": null,
+              "duration": 15946,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.SonomaJacket();\n});\n_shadowElements.GetShadow.Quantity('2');\n_shadowElements.GetShadow.Size('XL');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '2');\n_shadowElements.GetShadow.elements.SizeSelect().should('have.value', 'XL');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.MensMenu();\n});\n_shadowElements.GetShadow.GoogleTShirt();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.Size('S');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n_shadowElements.GetShadow.elements.SizeSelect().should('have.value', 'S');\n_shadowElements.GetShadow.ViewCart();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.QuantityCart('5');\n});\n_shadowElements.GetShadow.elements.QuantitySelectinCart().should('have.value', '5');\n(0, _Helpers.longWait)();",
+              "err": {},
+              "uuid": "66456902-dc3c-415e-95fd-d441f6919d6a",
+              "parentUUID": "b07a1f06-df5b-43d7-98e6-299896e6bb15",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify adding and removing multiple items to cart",
+              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 Verify adding and removing multiple items to cart",
+              "timedOut": null,
+              "duration": 9641,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  \"assets/shadow.cy.js/Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 -- Verify adding and removing multiple items to cart (failed).png\",\n  \"assests/shadow.cy.js.mp4\"\n]",
+              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n_shadowElements.GetShadow.ViewCart();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.Remove();\n});\n_shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(0 items)');\n(0, _Helpers.longWait)();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<span>' to have text '(0 items)', but the text was '(2 items)'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<span>' to have text '(0 items)', but the text was '(2 items)'\n    at Context.eval (webpack:///./test/cypress/e2e/ShadowTest/shadow.cy.js:91:7)",
+                "diff": "- '(2 items)'\n+ '(0 items)'\n"
+              },
+              "uuid": "d6258bca-8c7a-4099-9a76-64420e49d29e",
+              "parentUUID": "b07a1f06-df5b-43d7-98e6-299896e6bb15",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify checkout flow and functionalities (Shadow DOM)",
+              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 Verify checkout flow and functionalities (Shadow DOM)",
+              "timedOut": null,
+              "duration": 15569,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  \"assets/shadow.cy.js/Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 -- Verify checkout flow and functionalities (Shadow DOM) (failed).png\",\n  \"assests/shadow.cy.js.mp4\"\n]",
+              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.Quantity('5');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '5');\n_shadowElements.GetShadow.AddtoCart();\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ViewCart();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(2 items)');\n});\n_shadowElements.GetShadow.Checkout();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.fillBillingForm('CheckoutData');\n});\n_shadowElements.GetShadow.PlaceOrder();\n_shadowElements.GetShadow.elements.SuccessfulPurchase().should('have.text', 'Thank you');\n(0, _Helpers.mediumWait)();\n_shadowElements.GetShadow.Finish();\n(0, _Helpers.mediumWait)();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<span>' to have text '(2 items)', but the text was '(3 items)'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<span>' to have text '(2 items)', but the text was '(3 items)'\n    at Context.eval (webpack:///./test/cypress/e2e/ShadowTest/shadow.cy.js:123:13)",
+                "diff": "- '(3 items)'\n+ '(2 items)'\n"
+              },
+              "uuid": "5687b3b4-ea8c-417c-a22d-04396bc243fa",
+              "parentUUID": "b07a1f06-df5b-43d7-98e6-299896e6bb15",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a6621d9f-73cd-4bf7-95fa-a9ab192e38df",
+            "66456902-dc3c-415e-95fd-d441f6919d6a"
+          ],
+          "failures": [
+            "d6258bca-8c7a-4099-9a76-64420e49d29e",
+            "5687b3b4-ea8c-417c-a22d-04396bc243fa"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 56360,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "reportPageTitle": "Stefi",
+        "html": false,
+        "json": true,
+        "charts": true,
+        "embeddedScreenshots": true,
+        "saveAllAttempts": false,
+        "screenshotOnRunFailure": true,
+        "inlineAssets": true,
+        "reportDir": "cypress/reports/mocha"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
