@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-03-25T10:28:22.025Z",
-    "end": "2024-03-25T10:28:27.454Z",
-    "duration": 5429,
+    "start": "2024-03-26T14:01:16.781Z",
+    "end": "2024-03-26T14:01:31.114Z",
+    "duration": 14333,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,49 +18,49 @@
   },
   "results": [
     {
-      "uuid": "0828a9b9-9969-4649-bfc8-143886549200",
+      "uuid": "3345fa14-b31c-408e-92e0-7678f2f8b488",
       "title": "",
-      "fullFile": "test\\cypress\\e2e\\Input\\InputTest.cy.js",
-      "file": "test\\cypress\\e2e\\Input\\InputTest.cy.js",
+      "fullFile": "test\\cypress\\e2e\\dropdowns\\universityTest.cy.js",
+      "file": "test\\cypress\\e2e\\dropdowns\\universityTest.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "1015859d-3091-4997-b348-9c9117fa4fe1",
-          "title": "Test Input value validation",
+          "uuid": "5e0729d9-3ea9-4cee-8fec-12c6aae3c35d",
+          "title": "University Test",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Test all input fields",
-              "fullTitle": "Test Input value validation Test all input fields",
+              "title": "End to end",
+              "fullTitle": "University Test End to end",
               "timedOut": null,
-              "duration": 2464,
+              "duration": 11637,
               "state": "passed",
-              "speed": "fast",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "Input.Firstname('Stefani');\nInput.Lastname('Mnogudolgoprezime');\nInput.Age('26');\nInput.Country('North Macedonia');\nInput.Notes('TEST');\nInput.Submit();\nInput.elements.FirstnameInput().find('#firstname-value').should('have.text', 'Stefani');\nInput.elements.LastnameInput().find('#surname-value').should('have.text', 'Mnogudolgoprezime');\nInput.elements.AgeInput().find('#age-value').should('have.text', '26');\nInput.elements.CountrySelect().find('#country-value').should('have.text', 'North Macedonia');\nInput.elements.NotesInput().find('#notes-value').should('have.text', 'TEST');",
+              "code": "click.Selectdropdowns();\ncy.wait(2000);\nclick.Selectcheckbox();\ncy.wait(2000);\nclick.SelectColours();\nclick.SelectFood();\ncy.wait(2000);\nclick.SelectPear();\ncy.wait(2000);",
               "err": {},
-              "uuid": "511d078b-bc47-4457-962d-92f2fb4c9ce1",
-              "parentUUID": "1015859d-3091-4997-b348-9c9117fa4fe1",
+              "uuid": "4f74664b-2cda-45d9-b0ac-801a385de0d8",
+              "parentUUID": "5e0729d9-3ea9-4cee-8fec-12c6aae3c35d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "511d078b-bc47-4457-962d-92f2fb4c9ce1"
+            "4f74664b-2cda-45d9-b0ac-801a385de0d8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2464,
+          "duration": 11637,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -84,7 +84,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": true,
+        "saveHtml": false,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -95,11 +95,14 @@
     "marge": {
       "options": {
         "overwrite": false,
-        "html": true,
+        "reportPageTitle": "Stefi",
+        "html": false,
         "json": true,
         "charts": true,
         "embeddedScreenshots": true,
         "saveAllAttempts": false,
+        "screenshotOnRunFailure": true,
+        "inlineAssets": true,
         "reportDir": "cypress/reports/mocha"
       },
       "version": "6.2.0"

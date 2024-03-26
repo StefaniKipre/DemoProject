@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-03-25T09:29:49.316Z",
-    "end": "2024-03-25T09:30:18.215Z",
-    "duration": 28899,
+    "start": "2024-03-26T13:35:25.316Z",
+    "end": "2024-03-26T13:35:39.696Z",
+    "duration": 14380,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,49 +18,49 @@
   },
   "results": [
     {
-      "uuid": "8752406d-0da9-4beb-ba3b-a1f448614ea4",
+      "uuid": "eb0f35db-ac04-461d-91e9-04e3bf9b117e",
       "title": "",
-      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "fullFile": "test\\cypress\\e2e\\dropdowns\\universityTest.cy.js",
+      "file": "test\\cypress\\e2e\\dropdowns\\universityTest.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "55c496d0-8972-40b8-9e86-5c026e600d69",
-          "title": "Test the core functionalities of the website including interactions with shadow DOM elements",
+          "uuid": "45ca23f6-0174-4b63-a137-2a1fed4b58e5",
+          "title": "University Test",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Verify checkout flow and functionalities (Shadow DOM)",
-              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements Verify checkout flow and functionalities (Shadow DOM)",
+              "title": "End to end",
+              "fullTitle": "University Test End to end",
               "timedOut": null,
-              "duration": 25943,
+              "duration": 11570,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.Quantity('5');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '5');\n_shadowElements.GetShadow.AddtoCart();\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ViewCart();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(2 items)');\n});\n_shadowElements.GetShadow.Checkout();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.fillBillingForm('CheckoutData');\n});\n_shadowElements.GetShadow.PlaceOrder();\n_shadowElements.GetShadow.elements.SuccessfulPurchase().should('have.text', 'Thank you');\n(0, _Helpers.mediumWait)();\n_shadowElements.GetShadow.Finish();\n(0, _Helpers.mediumWait)();",
+              "code": "click.Selectdropdowns();\ncy.wait(2000);\nclick.Selectcheckbox();\ncy.wait(2000);\nclick.SelectColours();\nclick.SelectFood();\ncy.wait(2000);\nclick.SelectPear();\ncy.wait(2000);",
               "err": {},
-              "uuid": "ec78b76a-a46b-40f9-b167-5560356be522",
-              "parentUUID": "55c496d0-8972-40b8-9e86-5c026e600d69",
+              "uuid": "d1547c81-026d-4940-923e-b826d0133984",
+              "parentUUID": "45ca23f6-0174-4b63-a137-2a1fed4b58e5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ec78b76a-a46b-40f9-b167-5560356be522"
+            "d1547c81-026d-4940-923e-b826d0133984"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 25943,
+          "duration": 11570,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -95,11 +95,14 @@
     "marge": {
       "options": {
         "overwrite": false,
+        "reportPageTitle": "Stefi",
         "html": false,
         "json": true,
         "charts": true,
         "embeddedScreenshots": true,
         "saveAllAttempts": false,
+        "screenshotOnRunFailure": true,
+        "inlineAssets": true,
         "reportDir": "cypress/reports/mocha"
       },
       "version": "6.2.0"

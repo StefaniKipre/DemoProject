@@ -2,7 +2,7 @@ import {GetShadow} from "./shadowElements.cy";
 import {shortWait, mediumWait, longWait, navigate} from "./Helpers.cy"
 
 
-describe('Test the core functionalities of the website including interactions with shadow DOM elements', () => {
+describe('Test the core functionalities of the website including interactions with shadow DOM elements STEFI1', () => {
     beforeEach(function() {
       navigate()
    })
@@ -73,7 +73,7 @@ describe('Test the core functionalities of the website including interactions wi
     longWait()
    })
    
-   it.only('Verify adding and removing multiple items to cart', () => {
+   it('Verify adding and removing multiple items to cart', () => {
       GetShadow.LadiesMenu()
       shortWait().then(() => {
          GetShadow.ColorblockJacket()

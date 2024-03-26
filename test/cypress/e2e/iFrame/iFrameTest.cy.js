@@ -22,7 +22,7 @@ describe('Test Iframe input results and click on element in iframe', () => {
     Choose.ClickSearchBtn()
     cy.wait(3000)
     cy.log('Stefi')
-    getIframeBody().find('[data-extra*="position=2"]').should('have.text', 'Stefi – Wikipédia')
+    getIframeBody().find('[data-extra*="position=2"]').should('have.text', 'STEFI - YouTube')
     cy.wait(3000)
 
    })

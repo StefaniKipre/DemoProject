@@ -1,530 +1,24 @@
 {
   "stats": {
-    "suites": 13,
-    "tests": 20,
-    "passes": 19,
+    "suites": 10,
+    "tests": 21,
+    "passes": 15,
     "pending": 0,
-    "failures": 1,
-    "testsRegistered": 20,
-    "passPercent": 95,
+    "failures": 6,
+    "testsRegistered": 21,
+    "passPercent": 71.42857142857143,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2024-03-22T10:09:06.126Z",
-    "end": "2024-03-25T10:38:35.904Z",
-    "duration": 260969778
+    "start": "2024-03-26T13:30:52.305Z",
+    "end": "2024-03-26T14:02:10.086Z",
+    "duration": 1877781
   },
   "results": [
     {
-      "uuid": "d66b7d89-6ac2-4b9b-862f-a75d02750346",
-      "title": "",
-      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "ebc50085-0739-42dc-a467-026feaa250b1",
-          "title": "Test the core functionalities of the website including interactions with shadow DOM elements",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Verify checkout flow and functionalities (Shadow DOM)",
-              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements Verify checkout flow and functionalities (Shadow DOM)",
-              "timedOut": null,
-              "duration": 30598,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.Quantity('5');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '5');\n_shadowElements.GetShadow.AddtoCart();\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ViewCart();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(2 items)');\n});\n_shadowElements.GetShadow.Checkout();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.fillBillingForm('CheckoutData');\n});\n_shadowElements.GetShadow.PlaceOrder();\n_shadowElements.GetShadow.elements.SuccessfulPurchase().should('have.text', 'Thank you');\n(0, _Helpers.mediumWait)();\n_shadowElements.GetShadow.Finish();\n(0, _Helpers.mediumWait)();",
-              "err": {},
-              "uuid": "387b3736-864e-45cb-b3a2-3a317c577385",
-              "parentUUID": "ebc50085-0739-42dc-a467-026feaa250b1",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "387b3736-864e-45cb-b3a2-3a317c577385"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 30598,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "8752406d-0da9-4beb-ba3b-a1f448614ea4",
-      "title": "",
-      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "55c496d0-8972-40b8-9e86-5c026e600d69",
-          "title": "Test the core functionalities of the website including interactions with shadow DOM elements",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Verify checkout flow and functionalities (Shadow DOM)",
-              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements Verify checkout flow and functionalities (Shadow DOM)",
-              "timedOut": null,
-              "duration": 25943,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.Quantity('5');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '5');\n_shadowElements.GetShadow.AddtoCart();\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ViewCart();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(2 items)');\n});\n_shadowElements.GetShadow.Checkout();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.fillBillingForm('CheckoutData');\n});\n_shadowElements.GetShadow.PlaceOrder();\n_shadowElements.GetShadow.elements.SuccessfulPurchase().should('have.text', 'Thank you');\n(0, _Helpers.mediumWait)();\n_shadowElements.GetShadow.Finish();\n(0, _Helpers.mediumWait)();",
-              "err": {},
-              "uuid": "ec78b76a-a46b-40f9-b167-5560356be522",
-              "parentUUID": "55c496d0-8972-40b8-9e86-5c026e600d69",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "ec78b76a-a46b-40f9-b167-5560356be522"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 25943,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "ee181c3e-c460-42c8-8694-0050d9ce9e96",
-      "title": "",
-      "fullFile": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
-      "file": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "f8965778-1c61-4672-b715-d0c39d535575",
-          "title": "Testing Sizes, Items and Shopping Cart",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Test Size buttons",
-              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Size buttons",
-              "timedOut": null,
-              "duration": 1852,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "Stefi.Sizes([\"M\", \"L\", \"S\", \"XXL\"]);",
-              "err": {},
-              "uuid": "f2f30fd8-88bf-442c-850f-0fb9ea05b60e",
-              "parentUUID": "f8965778-1c61-4672-b715-d0c39d535575",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Test Add To Cart buttons",
-              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Add To Cart buttons",
-              "timedOut": null,
-              "duration": 1273,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Marine Blue T-shirt\"]);\n//cy.wait(2000)",
-              "err": {},
-              "uuid": "06f8e116-202d-4446-b436-1c088e7da4f9",
-              "parentUUID": "f8965778-1c61-4672-b715-d0c39d535575",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Test Quantity buttons",
-              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Quantity buttons",
-              "timedOut": null,
-              "duration": 1675,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.Cart();",
-              "err": {},
-              "uuid": "a25a03d5-bbdc-4032-80ca-a277a7bc1cb7",
-              "parentUUID": "f8965778-1c61-4672-b715-d0c39d535575",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "f2f30fd8-88bf-442c-850f-0fb9ea05b60e",
-            "06f8e116-202d-4446-b436-1c088e7da4f9",
-            "a25a03d5-bbdc-4032-80ca-a277a7bc1cb7"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 4800,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "0c1281bf-9313-419e-bcf8-92a44887cb27",
-      "title": "",
-      "fullFile": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
-      "file": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "13af9a1b-5bb5-472d-8886-04497a28b728",
-          "title": "Testing Sizes, Items and Shopping Cart",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Test Size buttons",
-              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Size buttons",
-              "timedOut": null,
-              "duration": 1816,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "Stefi.Sizes([\"M\", \"L\", \"S\", \"XXL\"]);",
-              "err": {},
-              "uuid": "5c3a0d43-8e8d-4085-8b96-2b337f13cdec",
-              "parentUUID": "13af9a1b-5bb5-472d-8886-04497a28b728",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Test Add To Cart buttons",
-              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Add To Cart buttons",
-              "timedOut": null,
-              "duration": 1321,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Marine Blue T-shirt\"]);\n//cy.wait(2000)",
-              "err": {},
-              "uuid": "0622d13a-42ca-4555-930c-747056bd5509",
-              "parentUUID": "13af9a1b-5bb5-472d-8886-04497a28b728",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Test Quantity buttons",
-              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Quantity buttons",
-              "timedOut": null,
-              "duration": 1628,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.Cart();",
-              "err": {},
-              "uuid": "491c2dc3-adbe-4a22-a1c4-21a9a8dd3a35",
-              "parentUUID": "13af9a1b-5bb5-472d-8886-04497a28b728",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "5c3a0d43-8e8d-4085-8b96-2b337f13cdec",
-            "0622d13a-42ca-4555-930c-747056bd5509",
-            "491c2dc3-adbe-4a22-a1c4-21a9a8dd3a35"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 4765,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "9204a6a6-f0d7-431c-b520-df86d17b1706",
-      "title": "",
-      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "90ad9853-198e-4023-9016-e8b80d746dc3",
-          "title": "Test the core functionalities of the website including interactions with shadow DOM elements",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Verify checkout flow and functionalities (Shadow DOM)",
-              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements Verify checkout flow and functionalities (Shadow DOM)",
-              "timedOut": null,
-              "duration": 25649,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.Quantity('5');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '5');\n_shadowElements.GetShadow.AddtoCart();\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ViewCart();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(2 items)');\n});\n_shadowElements.GetShadow.Checkout();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.fillBillingForm('CheckoutData');\n});\n_shadowElements.GetShadow.PlaceOrder();\n_shadowElements.GetShadow.elements.SuccessfulPurchase().should('have.text', 'Thank you');\n(0, _Helpers.mediumWait)();\n_shadowElements.GetShadow.Finish();\n(0, _Helpers.mediumWait)();",
-              "err": {},
-              "uuid": "1d905abb-f634-42f7-bc90-a666f77d8f3b",
-              "parentUUID": "90ad9853-198e-4023-9016-e8b80d746dc3",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "1d905abb-f634-42f7-bc90-a666f77d8f3b"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 25649,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "cbb9fdc5-4656-49ea-8c23-08e5c3303be4",
-      "title": "",
-      "fullFile": "test\\cypress\\e2e\\iFrame\\iFrameTest.cy.js",
-      "file": "test\\cypress\\e2e\\iFrame\\iFrameTest.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "e0b0e88f-d1f7-4c07-9151-672070d7428b",
-          "title": "Test Iframe input results and click on element in iframe",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Input results and click on a search result",
-              "fullTitle": "Test Iframe input results and click on element in iframe Input results and click on a search result",
-              "timedOut": null,
-              "duration": 8246,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "Choose.ChooseSearchEngine('info.com');\nChoose.Type('Stefi');\nChoose.ClickSearchBtn();\ncy.wait(3000);\ncy.log('Stefi');\ngetIframeBody().find('[data-extra*=\"position=2\"]').should('have.text', 'Stefi – Wikipédia');\ncy.wait(3000);",
-              "err": {
-                "message": "AssertionError: Timed out retrying after 4000ms: expected '<a.web-yahoo__title>' to have text 'Stefi – Wikipédia', but the text was 'STEFI - YouTube'",
-                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<a.web-yahoo__title>' to have text 'Stefi – Wikipédia', but the text was 'STEFI - YouTube'\n    at Context.eval (webpack:///./test/cypress/e2e/iFrame/iFrameTest.cy.js:25:55)",
-                "diff": "- 'STEFI - YouTube'\n+ 'Stefi – Wikipédia'\n"
-              },
-              "uuid": "71927071-7b29-4217-80e5-10926a35525c",
-              "parentUUID": "e0b0e88f-d1f7-4c07-9151-672070d7428b",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Clear search input and try with another search engine",
-              "fullTitle": "Test Iframe input results and click on element in iframe Clear search input and try with another search engine",
-              "timedOut": null,
-              "duration": 8984,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "Choose.ChooseSearchEngine('bing.com');\nChoose.Type('Cypress');\nChoose.ClickSearchBtn();\ncy.wait(5000);\ngetIframeBody().find('h2 [href=\"https://github.com/cypress-io/cypress\"]').should('have.text', 'GitHub - cypress-io/cypress: Fast, easy and reliable …');\ncy.wait(3000);",
-              "err": {},
-              "uuid": "bcf06d21-539f-4a7f-a4c0-295a97c98bcc",
-              "parentUUID": "e0b0e88f-d1f7-4c07-9151-672070d7428b",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "bcf06d21-539f-4a7f-a4c0-295a97c98bcc"
-          ],
-          "failures": [
-            "71927071-7b29-4217-80e5-10926a35525c"
-          ],
-          "pending": [],
-          "skipped": [],
-          "duration": 17230,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "f8a63a2a-29de-4584-97b5-28f3024e2b9e",
-      "title": "",
-      "fullFile": "test\\cypress\\e2e\\dropdownList\\TestList.cy.js",
-      "file": "test\\cypress\\e2e\\dropdownList\\TestList.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "ba5b0f51-35ab-41d8-b416-ef8f444113c0",
-          "title": "Test Dropdown list",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Test chosen value from dropdown",
-              "fullTitle": "Test Dropdown list Test chosen value from dropdown",
-              "timedOut": null,
-              "duration": 1889,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "Stefi.Selectdropdown('Option 2');\n//cy.get('#dropdown').find('option[value=\"2\"]').should(\"be.selected\");\nStefi.elements.Dropdown().find('option[value=\"2\"]').should(\"be.selected\");",
-              "err": {},
-              "uuid": "e7d00ff9-1bee-42da-b34d-726d014afa37",
-              "parentUUID": "ba5b0f51-35ab-41d8-b416-ef8f444113c0",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "e7d00ff9-1bee-42da-b34d-726d014afa37"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 1889,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "0828a9b9-9969-4649-bfc8-143886549200",
+      "uuid": "ccb73866-2d32-42cc-9078-9580739774d7",
       "title": "",
       "fullFile": "test\\cypress\\e2e\\Input\\InputTest.cy.js",
       "file": "test\\cypress\\e2e\\Input\\InputTest.cy.js",
@@ -533,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1015859d-3091-4997-b348-9c9117fa4fe1",
+          "uuid": "ab78ea39-e132-422d-8e3e-5fcfee17692a",
           "title": "Test Input value validation",
           "fullFile": "",
           "file": "",
@@ -544,7 +38,7 @@
               "title": "Test all input fields",
               "fullTitle": "Test Input value validation Test all input fields",
               "timedOut": null,
-              "duration": 2464,
+              "duration": 2465,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -553,20 +47,20 @@
               "context": null,
               "code": "Input.Firstname('Stefani');\nInput.Lastname('Mnogudolgoprezime');\nInput.Age('26');\nInput.Country('North Macedonia');\nInput.Notes('TEST');\nInput.Submit();\nInput.elements.FirstnameInput().find('#firstname-value').should('have.text', 'Stefani');\nInput.elements.LastnameInput().find('#surname-value').should('have.text', 'Mnogudolgoprezime');\nInput.elements.AgeInput().find('#age-value').should('have.text', '26');\nInput.elements.CountrySelect().find('#country-value').should('have.text', 'North Macedonia');\nInput.elements.NotesInput().find('#notes-value').should('have.text', 'TEST');",
               "err": {},
-              "uuid": "511d078b-bc47-4457-962d-92f2fb4c9ce1",
-              "parentUUID": "1015859d-3091-4997-b348-9c9117fa4fe1",
+              "uuid": "c3561e1b-b847-4a85-8308-848e6794631d",
+              "parentUUID": "ab78ea39-e132-422d-8e3e-5fcfee17692a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "511d078b-bc47-4457-962d-92f2fb4c9ce1"
+            "c3561e1b-b847-4a85-8308-848e6794631d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2464,
+          "duration": 2465,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -582,49 +76,49 @@
       "_timeout": 2000
     },
     {
-      "uuid": "875b56d4-c601-402e-9ca2-1b2b80ffecef",
+      "uuid": "eb0f35db-ac04-461d-91e9-04e3bf9b117e",
       "title": "",
-      "fullFile": "test\\cypress\\e2e\\SubmitForm\\SubmitTest.cy.js",
-      "file": "test\\cypress\\e2e\\SubmitForm\\SubmitTest.cy.js",
+      "fullFile": "test\\cypress\\e2e\\dropdowns\\universityTest.cy.js",
+      "file": "test\\cypress\\e2e\\dropdowns\\universityTest.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "d6dde68a-efe5-4266-8a3b-2bca49b18b52",
-          "title": "Test Form submit with math problem",
+          "uuid": "45ca23f6-0174-4b63-a137-2a1fed4b58e5",
+          "title": "University Test",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Test submit form",
-              "fullTitle": "Test Form submit with math problem Test submit form",
+              "title": "End to end",
+              "fullTitle": "University Test End to end",
               "timedOut": null,
-              "duration": 17469,
+              "duration": 11570,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "Form.FirstInput('Stefani');\ncy.wait(2000);\nForm.MessageOne('This is the first message <3');\ncy.wait(2000);\nForm.SubmitOne();\ncy.wait(2000);\ncy.get('#et_pb_contact_form_0').should('have.text', 'Thanks for contacting us');\nForm.SecondInput('Kiprevska');\ncy.wait(2000);\nForm.MessageTwo('This is the second message </3');\ncy.wait(2000);\nForm.Math('15');\ncy.wait(2000);\nForm.SubmitTwo();\ncy.wait(2000);\ncy.get('#et_pb_contact_form_1').should('have.text', 'Thanks for contacting us');",
+              "code": "click.Selectdropdowns();\ncy.wait(2000);\nclick.Selectcheckbox();\ncy.wait(2000);\nclick.SelectColours();\nclick.SelectFood();\ncy.wait(2000);\nclick.SelectPear();\ncy.wait(2000);",
               "err": {},
-              "uuid": "f3ccef29-2cfd-4e34-a889-5f8eeadb5065",
-              "parentUUID": "d6dde68a-efe5-4266-8a3b-2bca49b18b52",
+              "uuid": "d1547c81-026d-4940-923e-b826d0133984",
+              "parentUUID": "45ca23f6-0174-4b63-a137-2a1fed4b58e5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f3ccef29-2cfd-4e34-a889-5f8eeadb5065"
+            "d1547c81-026d-4940-923e-b826d0133984"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 17469,
+          "duration": 11570,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -640,49 +134,76 @@
       "_timeout": 2000
     },
     {
-      "uuid": "05d9fb11-d548-4bd8-af2c-5ba15ab7fb6f",
+      "uuid": "b7cf6e6a-e34c-46a9-be0d-ed679f3be77c",
       "title": "",
-      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "fullFile": "test\\cypress\\e2e\\iFrame\\iFrameTest.cy.js",
+      "file": "test\\cypress\\e2e\\iFrame\\iFrameTest.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "f347bd04-18c5-4e61-9ab0-3c44201edb82",
-          "title": "Test the core functionalities of the website including interactions with shadow DOM elements",
+          "uuid": "62a0c153-9e3a-4d39-acba-fd007a06ddd1",
+          "title": "Test Iframe input results and click on element in iframe",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Verify images on Product Pages and Listings",
-              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements Verify images on Product Pages and Listings",
+              "title": "Input results and click on a search result",
+              "fullTitle": "Test Iframe input results and click on element in iframe Input results and click on a search result",
               "timedOut": null,
-              "duration": 15471,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 8220,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
-              "context": null,
-              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.longWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.elements.LadiesColoblockJacket().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.elements.LadiesSonomaJacket().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.MensMenu();\n});\n_shadowElements.GetShadow.GoogleTShirt();\n_shadowElements.GetShadow.elements.BasicGoogleTshirt().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.MensMenu();\n});\n_shadowElements.GetShadow.MapsTshirt();\n_shadowElements.GetShadow.elements.GoogleMapsTshirt().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.shortWait)();",
-              "err": {},
-              "uuid": "5ecd0a48-025e-4e56-a8a7-b9dc69a2ea4a",
-              "parentUUID": "f347bd04-18c5-4e61-9ab0-3c44201edb82",
+              "context": "[\n  \"assets/iFrameTest.cy.js/Test Iframe input results and click on element in iframe -- Input results and click on a search result (failed).png\",\n  \"assests/iFrameTest.cy.js.mp4\"\n]",
+              "code": "Choose.ChooseSearchEngine('info.com');\nChoose.Type('Stefi');\nChoose.ClickSearchBtn();\ncy.wait(3000);\ncy.log('Stefi');\ngetIframeBody().find('[data-extra*=\"position=2\"]').should('have.text', 'STEFI - YouTube');\ncy.wait(3000);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<a.web-yahoo__title>' to have text 'STEFI - YouTube', but the text was 'Stefi – Wikipédia'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<a.web-yahoo__title>' to have text 'STEFI - YouTube', but the text was 'Stefi – Wikipédia'\n    at Context.eval (webpack:///./test/cypress/e2e/iFrame/iFrameTest.cy.js:25:55)",
+                "diff": "- 'Stefi – Wikipédia'\n+ 'STEFI - YouTube'\n"
+              },
+              "uuid": "9fb53b30-e8b9-42b9-986c-77441f4efb8d",
+              "parentUUID": "62a0c153-9e3a-4d39-acba-fd007a06ddd1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clear search input and try with another search engine",
+              "fullTitle": "Test Iframe input results and click on element in iframe Clear search input and try with another search engine",
+              "timedOut": null,
+              "duration": 10130,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  \"assets/iFrameTest.cy.js/Test Iframe input results and click on element in iframe -- Clear search input and try with another search engine (failed).png\",\n  \"assests/iFrameTest.cy.js.mp4\"\n]",
+              "code": "Choose.ChooseSearchEngine('bing.com');\nChoose.Type('Cypress');\nChoose.ClickSearchBtn();\ncy.wait(5000);\ngetIframeBody().find('h2 [href=\"https://github.com/cypress-io/cypress\"]').should('have.text', 'GitHub - cypress-io/cypress: Fast, easy and reliable …');\ncy.wait(3000);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `h2 [href=\"https://github.com/cypress-io/cypress\"]`, but never found it. Queried from:\n\n              > <body.b_respl.b_sbText>",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `h2 [href=\"https://github.com/cypress-io/cypress\"]`, but never found it. Queried from:\n\n              > <body.b_respl.b_sbText>\n    at Context.eval (webpack:///./test/cypress/e2e/iFrame/iFrameTest.cy.js:34:80)",
+                "diff": null
+              },
+              "uuid": "3593b071-86ad-4839-9a2d-29968908bae5",
+              "parentUUID": "62a0c153-9e3a-4d39-acba-fd007a06ddd1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "5ecd0a48-025e-4e56-a8a7-b9dc69a2ea4a"
+          "passes": [],
+          "failures": [
+            "9fb53b30-e8b9-42b9-986c-77441f4efb8d",
+            "3593b071-86ad-4839-9a2d-29968908bae5"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 15471,
+          "duration": 18350,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -698,49 +219,49 @@
       "_timeout": 2000
     },
     {
-      "uuid": "7b199d27-00d5-4165-beb1-7249870fb121",
+      "uuid": "b0cf889c-3b42-463c-8330-ecfc40d15fd6",
       "title": "",
-      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "fullFile": "test\\cypress\\e2e\\LocationChange\\LocationChangeTest.cy.js",
+      "file": "test\\cypress\\e2e\\LocationChange\\LocationChangeTest.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "a5e098c3-e1df-40c4-91ed-ff1c857499e3",
-          "title": "Test the core functionalities of the website including interactions with shadow DOM elements",
+          "uuid": "0dfa09e8-faa8-4018-9e03-f49050e50d44",
+          "title": "Test page navigation and window location change",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Verify size and quantity selection in product and cart",
-              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements Verify size and quantity selection in product and cart",
+              "title": "Test Inout field with location change",
+              "fullTitle": "Test page navigation and window location change Test Inout field with location change",
               "timedOut": null,
-              "duration": 19135,
+              "duration": 8287,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.SonomaJacket();\n});\n_shadowElements.GetShadow.Quantity('2');\n_shadowElements.GetShadow.Size('XL');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '2');\n_shadowElements.GetShadow.elements.SizeSelect().should('have.value', 'XL');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.MensMenu();\n});\n_shadowElements.GetShadow.GoogleTShirt();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.Size('S');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n_shadowElements.GetShadow.elements.SizeSelect().should('have.value', 'S');\n_shadowElements.GetShadow.ViewCart();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.QuantityCart('5');\n});\n_shadowElements.GetShadow.elements.QuantitySelectinCart().should('have.value', '5');\n(0, _Helpers.longWait)();",
+              "code": "Input.Name('Stefani Kiprevska');\nInput.Submit();\ncy.wait(5000);\ncy.url().should('eq', 'https://ultimateqa.com/?firstname=Stefani%20Kiprevska');",
               "err": {},
-              "uuid": "0864a284-e2d7-4a6a-a440-182208d62f23",
-              "parentUUID": "a5e098c3-e1df-40c4-91ed-ff1c857499e3",
+              "uuid": "840c0f3e-8e0b-425e-a6b6-900f02204d33",
+              "parentUUID": "0dfa09e8-faa8-4018-9e03-f49050e50d44",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0864a284-e2d7-4a6a-a440-182208d62f23"
+            "840c0f3e-8e0b-425e-a6b6-900f02204d33"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 19135,
+          "duration": 8287,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -756,65 +277,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "a6c7a0a6-1560-4619-96de-640e060652b8",
-      "title": "",
-      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "f3b6d526-04b3-4a21-bff4-91c02d87d426",
-          "title": "Test the core functionalities of the website including interactions with shadow DOM elements",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Verify adding and removing multiple items to cart",
-              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements Verify adding and removing multiple items to cart",
-              "timedOut": null,
-              "duration": 10042,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n_shadowElements.GetShadow.ViewCart();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.Remove();\n});\n_shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(0 items)');\n(0, _Helpers.longWait)();",
-              "err": {},
-              "uuid": "391fd67c-b042-40cc-93c7-7783e933d17a",
-              "parentUUID": "f3b6d526-04b3-4a21-bff4-91c02d87d426",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "391fd67c-b042-40cc-93c7-7783e933d17a"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 10042,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "d8beace6-01d2-488d-8c2d-6a14f3188233",
+      "uuid": "b9ef71e3-9144-42a6-b7b0-5eedc2b81852",
       "title": "",
       "fullFile": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
       "file": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
@@ -823,7 +286,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e415b4e7-bee2-4b2a-a858-7d4ce36ed610",
+          "uuid": "5e7243ff-e66d-4c7d-af59-d83f74f4fd0e",
           "title": "Testing Sizes, Items and Shopping Cart",
           "fullFile": "",
           "file": "",
@@ -834,7 +297,7 @@
               "title": "Test Size buttons",
               "fullTitle": "Testing Sizes, Items and Shopping Cart Test Size buttons",
               "timedOut": null,
-              "duration": 2741,
+              "duration": 1693,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -843,8 +306,8 @@
               "context": null,
               "code": "Stefi.Sizes([\"M\", \"L\", \"S\", \"XXL\"]);",
               "err": {},
-              "uuid": "cd032a06-b33a-419a-9f1e-695a05393e13",
-              "parentUUID": "e415b4e7-bee2-4b2a-a858-7d4ce36ed610",
+              "uuid": "b8e15a2d-551e-4cae-8874-4865a65635f9",
+              "parentUUID": "5e7243ff-e66d-4c7d-af59-d83f74f4fd0e",
               "isHook": false,
               "skipped": false
             },
@@ -852,7 +315,7 @@
               "title": "Test Add To Cart buttons",
               "fullTitle": "Testing Sizes, Items and Shopping Cart Test Add To Cart buttons",
               "timedOut": null,
-              "duration": 1906,
+              "duration": 1377,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -861,8 +324,8 @@
               "context": null,
               "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Marine Blue T-shirt\"]);\n//cy.wait(2000)",
               "err": {},
-              "uuid": "207b738e-4438-42f4-81f9-e44fa7061719",
-              "parentUUID": "e415b4e7-bee2-4b2a-a858-7d4ce36ed610",
+              "uuid": "b1bc49f4-1d38-4786-8c9f-c5e4e8bf6510",
+              "parentUUID": "5e7243ff-e66d-4c7d-af59-d83f74f4fd0e",
               "isHook": false,
               "skipped": false
             },
@@ -870,7 +333,7 @@
               "title": "Test Quantity buttons",
               "fullTitle": "Testing Sizes, Items and Shopping Cart Test Quantity buttons",
               "timedOut": null,
-              "duration": 1949,
+              "duration": 1573,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -879,22 +342,482 @@
               "context": null,
               "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.Cart();",
               "err": {},
-              "uuid": "97ee3934-8a0d-4208-a022-d4461717b9a3",
-              "parentUUID": "e415b4e7-bee2-4b2a-a858-7d4ce36ed610",
+              "uuid": "f5912165-5f13-495c-b4a3-e1342c316dfb",
+              "parentUUID": "5e7243ff-e66d-4c7d-af59-d83f74f4fd0e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "cd032a06-b33a-419a-9f1e-695a05393e13",
-            "207b738e-4438-42f4-81f9-e44fa7061719",
-            "97ee3934-8a0d-4208-a022-d4461717b9a3"
+            "b8e15a2d-551e-4cae-8874-4865a65635f9",
+            "b1bc49f4-1d38-4786-8c9f-c5e4e8bf6510",
+            "f5912165-5f13-495c-b4a3-e1342c316dfb"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6596,
+          "duration": 4643,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3d332783-dd7b-4b1c-8f40-f14b11321ee0",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0b055482-da6c-4ff8-9db3-d8296a473a91",
+          "title": "Test the core functionalities of the website including interactions with shadow DOM elements STEFI1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify images on Product Pages and Listings",
+              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 Verify images on Product Pages and Listings",
+              "timedOut": null,
+              "duration": 15643,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.longWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.elements.LadiesColoblockJacket().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.elements.LadiesSonomaJacket().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.MensMenu();\n});\n_shadowElements.GetShadow.GoogleTShirt();\n_shadowElements.GetShadow.elements.BasicGoogleTshirt().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.MensMenu();\n});\n_shadowElements.GetShadow.MapsTshirt();\n_shadowElements.GetShadow.elements.GoogleMapsTshirt().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.shortWait)();",
+              "err": {},
+              "uuid": "128baaf8-dd08-4af7-9f64-b26440a4b2bd",
+              "parentUUID": "0b055482-da6c-4ff8-9db3-d8296a473a91",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify size and quantity selection in product and cart",
+              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 Verify size and quantity selection in product and cart",
+              "timedOut": null,
+              "duration": 16041,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.SonomaJacket();\n});\n_shadowElements.GetShadow.Quantity('2');\n_shadowElements.GetShadow.Size('XL');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '2');\n_shadowElements.GetShadow.elements.SizeSelect().should('have.value', 'XL');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.MensMenu();\n});\n_shadowElements.GetShadow.GoogleTShirt();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.Size('S');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n_shadowElements.GetShadow.elements.SizeSelect().should('have.value', 'S');\n_shadowElements.GetShadow.ViewCart();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.QuantityCart('5');\n});\n_shadowElements.GetShadow.elements.QuantitySelectinCart().should('have.value', '5');\n(0, _Helpers.longWait)();",
+              "err": {},
+              "uuid": "289fbdf1-05d5-433c-bd3d-e9e694ff7ca0",
+              "parentUUID": "0b055482-da6c-4ff8-9db3-d8296a473a91",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify adding and removing multiple items to cart",
+              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 Verify adding and removing multiple items to cart",
+              "timedOut": null,
+              "duration": 9748,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  \"assets/shadow.cy.js/Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 -- Verify adding and removing multiple items to cart (failed).png\",\n  \"assests/shadow.cy.js.mp4\"\n]",
+              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n_shadowElements.GetShadow.ViewCart();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.Remove();\n});\n_shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(0 items)');\n(0, _Helpers.longWait)();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<span>' to have text '(0 items)', but the text was '(2 items)'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<span>' to have text '(0 items)', but the text was '(2 items)'\n    at Context.eval (webpack:///./test/cypress/e2e/ShadowTest/shadow.cy.js:91:7)",
+                "diff": "- '(2 items)'\n+ '(0 items)'\n"
+              },
+              "uuid": "e148ffee-1a24-48ac-936a-852db06b5b61",
+              "parentUUID": "0b055482-da6c-4ff8-9db3-d8296a473a91",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify checkout flow and functionalities (Shadow DOM)",
+              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 Verify checkout flow and functionalities (Shadow DOM)",
+              "timedOut": null,
+              "duration": 15462,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  \"assets/shadow.cy.js/Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 -- Verify checkout flow and functionalities (Shadow DOM) (failed).png\",\n  \"assests/shadow.cy.js.mp4\"\n]",
+              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.Quantity('5');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '5');\n_shadowElements.GetShadow.AddtoCart();\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ViewCart();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(2 items)');\n});\n_shadowElements.GetShadow.Checkout();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.fillBillingForm('CheckoutData');\n});\n_shadowElements.GetShadow.PlaceOrder();\n_shadowElements.GetShadow.elements.SuccessfulPurchase().should('have.text', 'Thank you');\n(0, _Helpers.mediumWait)();\n_shadowElements.GetShadow.Finish();\n(0, _Helpers.mediumWait)();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<span>' to have text '(2 items)', but the text was '(3 items)'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<span>' to have text '(2 items)', but the text was '(3 items)'\n    at Context.eval (webpack:///./test/cypress/e2e/ShadowTest/shadow.cy.js:123:13)",
+                "diff": "- '(3 items)'\n+ '(2 items)'\n"
+              },
+              "uuid": "c91a4d91-869c-42b7-8cad-a56aeec86cca",
+              "parentUUID": "0b055482-da6c-4ff8-9db3-d8296a473a91",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "128baaf8-dd08-4af7-9f64-b26440a4b2bd",
+            "289fbdf1-05d5-433c-bd3d-e9e694ff7ca0"
+          ],
+          "failures": [
+            "e148ffee-1a24-48ac-936a-852db06b5b61",
+            "c91a4d91-869c-42b7-8cad-a56aeec86cca"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 56894,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f4db590e-c045-4e80-87da-269f471d5b8f",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\Input\\InputTest.cy.js",
+      "file": "test\\cypress\\e2e\\Input\\InputTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7f6e5375-48e4-4c9d-beeb-63add1440025",
+          "title": "Test Input value validation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test all input fields",
+              "fullTitle": "Test Input value validation Test all input fields",
+              "timedOut": null,
+              "duration": 2533,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Input.Firstname('Stefani');\nInput.Lastname('Mnogudolgoprezime');\nInput.Age('26');\nInput.Country('North Macedonia');\nInput.Notes('TEST');\nInput.Submit();\nInput.elements.FirstnameInput().find('#firstname-value').should('have.text', 'Stefani');\nInput.elements.LastnameInput().find('#surname-value').should('have.text', 'Mnogudolgoprezime');\nInput.elements.AgeInput().find('#age-value').should('have.text', '26');\nInput.elements.CountrySelect().find('#country-value').should('have.text', 'North Macedonia');\nInput.elements.NotesInput().find('#notes-value').should('have.text', 'TEST');",
+              "err": {},
+              "uuid": "895b8994-6f70-45b1-8829-b0d782dffbfe",
+              "parentUUID": "7f6e5375-48e4-4c9d-beeb-63add1440025",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "895b8994-6f70-45b1-8829-b0d782dffbfe"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2533,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3345fa14-b31c-408e-92e0-7678f2f8b488",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\dropdowns\\universityTest.cy.js",
+      "file": "test\\cypress\\e2e\\dropdowns\\universityTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5e0729d9-3ea9-4cee-8fec-12c6aae3c35d",
+          "title": "University Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "End to end",
+              "fullTitle": "University Test End to end",
+              "timedOut": null,
+              "duration": 11637,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "click.Selectdropdowns();\ncy.wait(2000);\nclick.Selectcheckbox();\ncy.wait(2000);\nclick.SelectColours();\nclick.SelectFood();\ncy.wait(2000);\nclick.SelectPear();\ncy.wait(2000);",
+              "err": {},
+              "uuid": "4f74664b-2cda-45d9-b0ac-801a385de0d8",
+              "parentUUID": "5e0729d9-3ea9-4cee-8fec-12c6aae3c35d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4f74664b-2cda-45d9-b0ac-801a385de0d8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11637,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e1860b11-e668-4143-816b-2a3670d76cee",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
+      "file": "test\\cypress\\e2e\\ShoppingCart\\ShoppingCartTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "44e7caa0-c858-4f59-82a2-0281604fabe5",
+          "title": "Testing Sizes, Items and Shopping Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Size buttons",
+              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Size buttons",
+              "timedOut": null,
+              "duration": 1722,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Stefi.Sizes([\"M\", \"L\", \"S\", \"XXL\"]);",
+              "err": {},
+              "uuid": "445ba4eb-5ac9-4b52-8b9a-ab5511cb37d4",
+              "parentUUID": "44e7caa0-c858-4f59-82a2-0281604fabe5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Add To Cart buttons",
+              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Add To Cart buttons",
+              "timedOut": null,
+              "duration": 1418,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Marine Blue T-shirt\"]);\n//cy.wait(2000)",
+              "err": {},
+              "uuid": "2552fe93-e962-489d-9d9c-0936cd0fbd69",
+              "parentUUID": "44e7caa0-c858-4f59-82a2-0281604fabe5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Quantity buttons",
+              "fullTitle": "Testing Sizes, Items and Shopping Cart Test Quantity buttons",
+              "timedOut": null,
+              "duration": 1614,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Stefi.Sizes([\"M\", \"L\", \"XL\"]);\nStefi.SelectItems([\"Cropped Stay Groovy off white\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.SelectItems([\"Basic Cactus White T-shirt\"]);\nStefi.CloseCart();\n//cy.wait(2000)\nStefi.Cart();",
+              "err": {},
+              "uuid": "699551fe-4fc6-40e1-9285-695917149916",
+              "parentUUID": "44e7caa0-c858-4f59-82a2-0281604fabe5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "445ba4eb-5ac9-4b52-8b9a-ab5511cb37d4",
+            "2552fe93-e962-489d-9d9c-0936cd0fbd69",
+            "699551fe-4fc6-40e1-9285-695917149916"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4754,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "251a81a5-2658-41a1-9a8e-e4e8efcdefbd",
+      "title": "",
+      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9fef1093-e3d1-4097-89dd-eaa528af6a58",
+          "title": "Test the core functionalities of the website including interactions with shadow DOM elements STEFI1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify images on Product Pages and Listings",
+              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 Verify images on Product Pages and Listings",
+              "timedOut": null,
+              "duration": 15893,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.longWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.elements.LadiesColoblockJacket().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.elements.LadiesSonomaJacket().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.MensMenu();\n});\n_shadowElements.GetShadow.GoogleTShirt();\n_shadowElements.GetShadow.elements.BasicGoogleTshirt().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.MensMenu();\n});\n_shadowElements.GetShadow.MapsTshirt();\n_shadowElements.GetShadow.elements.GoogleMapsTshirt().should('have.attr', 'src').and('match', /.*\\.jpg$/);\n(0, _Helpers.shortWait)();",
+              "err": {},
+              "uuid": "9d10c07b-d559-4e0a-a1be-92852e3ec90c",
+              "parentUUID": "9fef1093-e3d1-4097-89dd-eaa528af6a58",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify size and quantity selection in product and cart",
+              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 Verify size and quantity selection in product and cart",
+              "timedOut": null,
+              "duration": 16078,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.SonomaJacket();\n});\n_shadowElements.GetShadow.Quantity('2');\n_shadowElements.GetShadow.Size('XL');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '2');\n_shadowElements.GetShadow.elements.SizeSelect().should('have.value', 'XL');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.MensMenu();\n});\n_shadowElements.GetShadow.GoogleTShirt();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.Size('S');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n_shadowElements.GetShadow.elements.SizeSelect().should('have.value', 'S');\n_shadowElements.GetShadow.ViewCart();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.QuantityCart('5');\n});\n_shadowElements.GetShadow.elements.QuantitySelectinCart().should('have.value', '5');\n(0, _Helpers.longWait)();",
+              "err": {},
+              "uuid": "a0a344d3-7055-4f88-aa6f-879c712248a6",
+              "parentUUID": "9fef1093-e3d1-4097-89dd-eaa528af6a58",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify adding and removing multiple items to cart",
+              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 Verify adding and removing multiple items to cart",
+              "timedOut": null,
+              "duration": 9677,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  \"assets/shadow.cy.js/Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 -- Verify adding and removing multiple items to cart (failed).png\",\n  \"assests/shadow.cy.js.mp4\"\n]",
+              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n_shadowElements.GetShadow.ViewCart();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.Remove();\n});\n_shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(0 items)');\n(0, _Helpers.longWait)();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<span>' to have text '(0 items)', but the text was '(2 items)'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<span>' to have text '(0 items)', but the text was '(2 items)'\n    at Context.eval (webpack:///./test/cypress/e2e/ShadowTest/shadow.cy.js:91:7)",
+                "diff": "- '(2 items)'\n+ '(0 items)'\n"
+              },
+              "uuid": "27793524-b603-40f4-ad58-6389af97562a",
+              "parentUUID": "9fef1093-e3d1-4097-89dd-eaa528af6a58",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify checkout flow and functionalities (Shadow DOM)",
+              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 Verify checkout flow and functionalities (Shadow DOM)",
+              "timedOut": null,
+              "duration": 15597,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  \"assets/shadow.cy.js/Test the core functionalities of the website including interactions with shadow DOM elements STEFI1 -- Verify checkout flow and functionalities (Shadow DOM) (failed).png\",\n  \"assests/shadow.cy.js.mp4\"\n]",
+              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.Quantity('5');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '5');\n_shadowElements.GetShadow.AddtoCart();\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ViewCart();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(2 items)');\n});\n_shadowElements.GetShadow.Checkout();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.fillBillingForm('CheckoutData');\n});\n_shadowElements.GetShadow.PlaceOrder();\n_shadowElements.GetShadow.elements.SuccessfulPurchase().should('have.text', 'Thank you');\n(0, _Helpers.mediumWait)();\n_shadowElements.GetShadow.Finish();\n(0, _Helpers.mediumWait)();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<span>' to have text '(2 items)', but the text was '(3 items)'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<span>' to have text '(2 items)', but the text was '(3 items)'\n    at Context.eval (webpack:///./test/cypress/e2e/ShadowTest/shadow.cy.js:123:13)",
+                "diff": "- '(3 items)'\n+ '(2 items)'\n"
+              },
+              "uuid": "863167ad-a614-420b-a4ce-c76f218142eb",
+              "parentUUID": "9fef1093-e3d1-4097-89dd-eaa528af6a58",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9d10c07b-d559-4e0a-a1be-92852e3ec90c",
+            "a0a344d3-7055-4f88-aa6f-879c712248a6"
+          ],
+          "failures": [
+            "27793524-b603-40f4-ad58-6389af97562a",
+            "863167ad-a614-420b-a4ce-c76f218142eb"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 57245,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -929,8 +852,14 @@
     "marge": {
       "options": {
         "overwrite": false,
+        "reportPageTitle": "Stefi",
         "html": false,
         "json": true,
+        "charts": true,
+        "embeddedScreenshots": true,
+        "saveAllAttempts": false,
+        "screenshotOnRunFailure": true,
+        "inlineAssets": true,
         "reportDir": "cypress/reports/mocha"
       },
       "version": "6.2.0"

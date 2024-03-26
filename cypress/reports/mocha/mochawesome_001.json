@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-03-22T10:09:57.226Z",
-    "end": "2024-03-22T10:10:31.993Z",
-    "duration": 34767,
+    "start": "2024-03-26T13:34:52.402Z",
+    "end": "2024-03-26T13:34:57.711Z",
+    "duration": 5309,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,49 +18,49 @@
   },
   "results": [
     {
-      "uuid": "d66b7d89-6ac2-4b9b-862f-a75d02750346",
+      "uuid": "ccb73866-2d32-42cc-9078-9580739774d7",
       "title": "",
-      "fullFile": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
-      "file": "test\\cypress\\e2e\\ShadowTest\\shadow.cy.js",
+      "fullFile": "test\\cypress\\e2e\\Input\\InputTest.cy.js",
+      "file": "test\\cypress\\e2e\\Input\\InputTest.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "ebc50085-0739-42dc-a467-026feaa250b1",
-          "title": "Test the core functionalities of the website including interactions with shadow DOM elements",
+          "uuid": "ab78ea39-e132-422d-8e3e-5fcfee17692a",
+          "title": "Test Input value validation",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Verify checkout flow and functionalities (Shadow DOM)",
-              "fullTitle": "Test the core functionalities of the website including interactions with shadow DOM elements Verify checkout flow and functionalities (Shadow DOM)",
+              "title": "Test all input fields",
+              "fullTitle": "Test Input value validation Test all input fields",
               "timedOut": null,
-              "duration": 30598,
+              "duration": 2465,
               "state": "passed",
-              "speed": "slow",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "_shadowElements.GetShadow.LadiesMenu();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.ColorblockJacket();\n});\n_shadowElements.GetShadow.Quantity('5');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '5');\n_shadowElements.GetShadow.AddtoCart();\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.LadiesMenu();\n});\n_shadowElements.GetShadow.SonomaJacket();\n_shadowElements.GetShadow.Quantity('3');\n_shadowElements.GetShadow.elements.QuantitySelect().should('have.value', '3');\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.AddtoCart();\n});\n_shadowElements.GetShadow.elements.AddedToCart().should('have.text', 'Added to cart');\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.ViewCart();\n});\n(0, _Helpers.shortWait)().then(() => {\n  _shadowElements.GetShadow.elements.EmptyCart().should('have.text', '(2 items)');\n});\n_shadowElements.GetShadow.Checkout();\n(0, _Helpers.mediumWait)().then(() => {\n  _shadowElements.GetShadow.fillBillingForm('CheckoutData');\n});\n_shadowElements.GetShadow.PlaceOrder();\n_shadowElements.GetShadow.elements.SuccessfulPurchase().should('have.text', 'Thank you');\n(0, _Helpers.mediumWait)();\n_shadowElements.GetShadow.Finish();\n(0, _Helpers.mediumWait)();",
+              "code": "Input.Firstname('Stefani');\nInput.Lastname('Mnogudolgoprezime');\nInput.Age('26');\nInput.Country('North Macedonia');\nInput.Notes('TEST');\nInput.Submit();\nInput.elements.FirstnameInput().find('#firstname-value').should('have.text', 'Stefani');\nInput.elements.LastnameInput().find('#surname-value').should('have.text', 'Mnogudolgoprezime');\nInput.elements.AgeInput().find('#age-value').should('have.text', '26');\nInput.elements.CountrySelect().find('#country-value').should('have.text', 'North Macedonia');\nInput.elements.NotesInput().find('#notes-value').should('have.text', 'TEST');",
               "err": {},
-              "uuid": "387b3736-864e-45cb-b3a2-3a317c577385",
-              "parentUUID": "ebc50085-0739-42dc-a467-026feaa250b1",
+              "uuid": "c3561e1b-b847-4a85-8308-848e6794631d",
+              "parentUUID": "ab78ea39-e132-422d-8e3e-5fcfee17692a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "387b3736-864e-45cb-b3a2-3a317c577385"
+            "c3561e1b-b847-4a85-8308-848e6794631d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 30598,
+          "duration": 2465,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -95,8 +95,14 @@
     "marge": {
       "options": {
         "overwrite": false,
+        "reportPageTitle": "Stefi",
         "html": false,
         "json": true,
+        "charts": true,
+        "embeddedScreenshots": true,
+        "saveAllAttempts": false,
+        "screenshotOnRunFailure": true,
+        "inlineAssets": true,
         "reportDir": "cypress/reports/mocha"
       },
       "version": "6.2.0"
