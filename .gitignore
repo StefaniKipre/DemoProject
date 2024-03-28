@@ -52,4 +52,4 @@ build/Release
 cypress/videos
 cypress/screenshots
 js/*.js
-mochawesome-report*/
+cypress/reports*/

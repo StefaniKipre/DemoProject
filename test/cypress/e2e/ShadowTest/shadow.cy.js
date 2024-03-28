@@ -2,7 +2,7 @@ import {GetShadow} from "./shadowElements.cy";
 import {shortWait, mediumWait, longWait, navigate} from "./Helpers.cy"
 
 
-describe('Test the core functionalities of the website including interactions with shadow DOM elements STEFI1', () => {
+describe('Test the core functionalities of the website including interactions with shadow DOM elements STEFI4', () => {
     beforeEach(function() {
       navigate()
    })
@@ -88,7 +88,7 @@ describe('Test the core functionalities of the website including interactions wi
       GetShadow.Remove()
       })
       GetShadow.elements.EmptyCart()
-      .should('have.text', '(0 items)')
+      .should('have.text', '(2 items)')
       longWait()
       })
       
@@ -120,7 +120,7 @@ describe('Test the core functionalities of the website including interactions wi
          })
          shortWait().then(()=> {
             GetShadow.elements.EmptyCart()
-            .should('have.text', '(2 items)')
+            .should('have.text', '(3 items)')
          })
          GetShadow.Checkout()
          mediumWait().then(()=>{

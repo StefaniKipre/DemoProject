@@ -28,3 +28,5 @@ Cypress.on('test:after:run', (test, runnable) => {
     addContext({ test }, video);
     }
   });
+
+  import "allure-cypress/commands";

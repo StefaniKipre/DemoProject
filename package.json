@@ -1,9 +1,11 @@
 {
   "devDependencies": {
+    "allure-commandline": "^2.27.0",
+    "allure-cucumberjs": "^2.15.0",
+    "allure-cypress": "^2.15.0",
+    "allure-js-commons": "^2.15.0",
     "cypress": "^13.7.1",
-    "cypress-mochawesome-reporter": "^3.8.2"
-  },
-  "dependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2",
     "mochawesome-merge": "^4.3.0"
   },
   "scripts": {
@@ -14,5 +16,18 @@
     "generate-report": "marge cypress/reports/mochareports/ report.json -f report -o cypress/reports/mochareports",
     "posttest": "npm run combine-reports && npm run generate-report",
     "test": "npm run scripts || npm run posttest"
+  },
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": false,
+    "reportPageTitle": "Stefi",
+    "html": false,
+    "json": true,
+    "charts": true,
+    "embeddedScreenshots": true,
+    "saveAllAttempts": false,
+    "screenshotOnRunFailure": true,
+    "inlineAssets": true,
+    "reportDir": "cypress/reports/mocha"
   }
 }
