@@ -5,8 +5,10 @@
     "allure-cypress": "^2.15.0",
     "allure-js-commons": "^2.15.0",
     "cypress": "^13.7.1",
+    "cypress-email-results": "^1.8.0",
     "cypress-mochawesome-reporter": "^3.8.2",
-    "mochawesome-merge": "^4.3.0"
+    "mochawesome-merge": "^4.3.0",
+    "nodemailer": "^6.9.13"
   },
   "scripts": {
     "clean:reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mochareports",
@@ -17,17 +19,7 @@
     "posttest": "npm run combine-reports && npm run generate-report",
     "test": "npm run scripts || npm run posttest"
   },
-  "reporter": "mochawesome",
-  "reporterOptions": {
-    "overwrite": false,
-    "reportPageTitle": "Stefi",
-    "html": false,
-    "json": true,
-    "charts": true,
-    "embeddedScreenshots": true,
-    "saveAllAttempts": false,
-    "screenshotOnRunFailure": true,
-    "inlineAssets": true,
-    "reportDir": "cypress/reports/mocha"
+  "dependencies": {
+    "archiver": "^7.0.1"
   }
 }

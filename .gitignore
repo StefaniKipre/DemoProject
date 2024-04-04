@@ -52,4 +52,12 @@ build/Release
 cypress/videos
 cypress/screenshots
 js/*.js
+mochawesome-report*/
 cypress/reports*/
+
+.allure
+.gradle
+schema
+build
+/allure-results/
+/*/allure-results/
