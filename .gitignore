@@ -61,3 +61,8 @@ schema
 build
 /allure-results/
 /*/allure-results/
+
+.env
+.env.example
+.env.local
+.env.staging

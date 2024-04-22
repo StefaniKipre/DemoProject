@@ -8,7 +8,9 @@
     "cypress-email-results": "^1.8.0",
     "cypress-mochawesome-reporter": "^3.8.2",
     "mochawesome-merge": "^4.3.0",
-    "nodemailer": "^6.9.13"
+    "nodemailer": "^6.9.13",
+    "archiver": "^7.0.1",
+    "dotenv": "^16.4.5"
   },
   "scripts": {
     "clean:reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mochareports",
@@ -18,8 +20,5 @@
     "generate-report": "marge cypress/reports/mochareports/ report.json -f report -o cypress/reports/mochareports",
     "posttest": "npm run combine-reports && npm run generate-report",
     "test": "npm run scripts || npm run posttest"
-  },
-  "dependencies": {
-    "archiver": "^7.0.1"
   }
 }
