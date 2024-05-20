@@ -27,6 +27,7 @@ Cypress.on('test:after:run', (test, runnable) => {
     const video = `assests/${Cypress.spec.name}.mp4`;
     addContext({ test }, video);
     }
+    
+    
   });
-
   import "allure-cypress/commands";

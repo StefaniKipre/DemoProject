@@ -1,44 +1,37 @@
-/*const nodemailer = require("nodemailer");
-const path = require ('node:path');
-const dotenv = require('dotenv');
-
-
-
-
-dotenv.config();
+const nodemailer = require("nodemailer");
+// const path = require('node:path');
+require('dotenv').config()
 
 
 const transporter = nodemailer.createTransport({
-  host: process.env.EMAIL_HOST,
-  port: process.env.EMAIL_PORT,
-  secure: true, 
+  host: 'smtp.gmail.com',
+  //port: 465,
+  secure: false,
   auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASSWORD,
+    user: process.env.USER_MAIL,
+    pass: process.env.USER_PASSWORD,
   },
 });
 
-
-async function main() {
-  const { emailContent } = require('./node_modules/cypress-email-results/index.js');
-  const info = await transporter.sendMail({
-    from: '"Hi Marija" <stefi.automation.test@gmail.com>', 
-    to: "stefani.kiprevska@gmail.com", 
-    subject: "Report", 
-    text: emailContent,
-     
-    attachments: [
-        {   
-            filename: 'mochawesome.html',
-            path: __dirname + '/mochawesome.html'
-            
-        }
-     ]
-  });
-
-  console.log("Message sent: %s", info.messageId);
+// const sendMail = async ({ to, from, subject, text, attachments }) => {
   
-}
+const sendMail = async (message) => {
 
-main().catch(console.error);
-module.exports = transporter;*/
+  try {
+    const info = await transporter.sendMail({
+      from:'stefi.automation.test@gmail.com',
+      to: 'stefani.kiprevska@gmail.com',
+      subject: 'Report',
+      text: message,
+      // attachments: attachments,
+    });
+
+    console.log("Email sent: %s", info);
+    return info;
+  } catch (error) {
+    console.error("Error sending email:", error);
+    return error;
+  }
+};
+
+module.exports = sendMail

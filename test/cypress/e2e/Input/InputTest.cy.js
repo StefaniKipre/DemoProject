@@ -18,6 +18,5 @@ describe('Test Input value validation', () => {
     Input.elements.AgeInput().find('#age-value').should('have.text', '26')
     Input.elements.CountrySelect().find('#country-value').should('have.text', 'North Macedonia')
     Input.elements.NotesInput().find('#notes-value').should('have.text', 'TEST')
-
-})
+  })
 })   

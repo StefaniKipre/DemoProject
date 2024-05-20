@@ -4,13 +4,13 @@
     "allure-cucumberjs": "^2.15.0",
     "allure-cypress": "^2.15.0",
     "allure-js-commons": "^2.15.0",
-    "cypress": "^13.7.1",
-    "cypress-email-results": "^1.8.0",
-    "cypress-mochawesome-reporter": "^3.8.2",
-    "mochawesome-merge": "^4.3.0",
-    "nodemailer": "^6.9.13",
     "archiver": "^7.0.1",
-    "dotenv": "^16.4.5"
+    "cypress": "^13.7.3",
+    "cypress-email-results-v2": "^0.0.3",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "dotenv": "^16.4.5",
+    "mochawesome-merge": "^4.3.0",
+    "nodemailer": "^6.9.13"
   },
   "scripts": {
     "clean:reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mochareports",
